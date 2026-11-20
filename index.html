@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description"
+        content="RYJO Sneakers: explorá nuestro catálogo de tenis deportivos y urbanos en Potosí, Bolivia. Consultas por WhatsApp.">
+    <title>RYJO Sneakers | Tenis en Potosí</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+    <!-- PERSONALIZAR: teléfono en js/script.js y datos de la tienda en sección ubicación -->
+    <div class="topbar">POTOSÍ, BOLIVIA <span>·</span> DESCUBRÍ TU PRÓXIMO PAR FAVORITO</div>
+    <header class="header" id="inicio"><a class="logo" href="#inicio"
+            aria-label="RYJO Sneakers, inicio">RYJO<span>.</span><small>SNEAKERS</small></a><button id="menuBtn"
+            class="menu-btn" aria-label="Abrir menú" aria-expanded="false">☰</button>
+        <nav class="nav" id="mainNav" aria-label="Navegación principal"><a href="#catalogo">Catálogo</a><a
+                href="#marcas">Marcas</a><a href="#ofertas">Ofertas</a><a href="#nosotros">Nosotros</a><a
+                href="#ubicacion">Ubicación</a><a href="#contacto" class="nav-contact">Contacto ↗</a></nav>
+    </header>
+    <main>
+        <section class="hero" aria-label="Presentación">
+            <div class="hero-copy"><span class="eyebrow">ESTILO QUE SE NOTA · POTOSÍ</span>
+                <h1>TU ESTILO<br>COMIENZA <em>EN TUS PIES.</em></h1>
+                <p>Explorá modelos deportivos y urbanos para cada ocasión. Descubrí lo que tenemos preparado en RYJO
+                    Sneakers.</p>
+                <div class="hero-actions"><a class="btn primary" href="#catalogo">Explorar catálogo ↗</a><a
+                        class="btn ghost" href="#ofertas">Ver ofertas</a></div>
+                <div class="hero-stat"><b>12+</b><span>modelos de demostración<br>listos para personalizar</span></div>
+            </div>
+            <div class="hero-art">
+                <div class="hero-image"><img id="heroPhoto" src="imagenes/WhatsApp Image 2026-11-06 at 5.14.02 PM.jpeg"width="900"
+                    height="800"
+                        alt="Ilustración de tenis deportivo de RYJO Sneakers">
+                    <div class="hero-chip">DROP 03 <span>↗</span></div>
+                </div>
+                
+            </div>
+            
+        </section>
+        <div class="ticker"><span>RYJO SNEAKERS</span><span>●</span><span>MODA URBANA</span><span>●</span><span>TENIS
+                DEPORTIVOS</span><span>●</span><span>POTOSÍ · BOLIVIA</span><span>●</span><span>RYJO SNEAKERS</span>
+        </div>
+        <section id="catalogo" class="section container">
+            <div class="section-top">
+                <div><span class="eyebrow dark">ENCONTRÁ TU ESTILO</span>
+                    <h2>EXPLORÁ EL <em>CATÁLOGO.</em></h2>
+                </div>
+                <p>Filtrá por marca, categoría y presupuesto. Todos los artículos mostrados son ejemplos editables.</p>
+            </div>
+            <div class="filters"><label class="search-label"><span>Buscar tenis</span><input id="search" type="search"
+                        placeholder="Buscar marca o modelo…"></label><label><span>Marca</span><select id="brandFilter">
+                        <option value="">Todas las marcas</option>
+                        <option>Nike</option>
+                        <option>Adidas</option>
+                        <option>Puma</option>
+                        <option>Vans</option>
+                        <option>Jordan</option>
+                    </select></label><label><span>Talla</span><select id="sizeFilter">
+                        <option value="">Todas las tallas</option>
+                        <option>37</option>
+                        <option>38</option>
+                        <option>39</option>
+                        <option>40</option>
+                        <option>41</option>
+                        <option>42</option>
+                        <option>43</option>
+                    </select></label><label><span>Precio máximo</span><select id="priceFilter">
+                        <option value="">Sin límite</option>
+                        <option value="500">Bs 500</option>
+                        <option value="600">Bs 600</option>
+                        <option value="700">Bs 700</option>
+                        <option value="900">Bs 900</option>
+                    </select></label></div>
+            <div class="chips" id="categoryChips"><button class="chip active" data-filter="todos">Todos</button><button
+                    class="chip" data-filter="Deportivo">Deportivos</button><button class="chip"
+                    data-filter="Urbano">Urbanos</button><button class="chip"
+                    data-filter="Casual">Casuales</button><button class="chip"
+                    data-filter="Hombre">Hombre</button><button class="chip" data-filter="Mujer">Mujer</button><button
+                    class="chip" data-filter="ofertas">Ofertas</button></div>
+            <div class="result-line"><span id="resultCount">12 productos</span><button class="text-btn"
+                    id="resetFilters">Limpiar filtros ↺</button></div>
+            <div class="product-grid" id="productGrid">
+                <article class="producto reveal" data-marca="Nike" data-categoria="Deportivo" data-genero="Hombre"
+                    data-precio="650" data-tallas="37,38,39,40,41,42,43" data-oferta="no" data-colores="Negro, Blanco"
+                    data-descripcion="Tenis de estilo deportivo para uso diario. Modelo demostrativo: confirmar existencias y características."
+                    data-nombre="Nike Air force X nocta ping">
+                    <div class="product-image"><img src="imagenes/teni 1.jpg" alt="Ilustración de tenis Nike Air "
+                            loading="lazy"><span class="pill nuevo">NUEVO</span></div>
+                    <div class="product-content"><span class="brand">Nike · Deportivo</span>
+                        <h3>Nike Air ForceXnocta ping</h3>
+                        <p class="muted">Tallas referenciales: 37–43</p>
+                        <div class="prices"><strong>Bs 520</strong></div>
+                        <div class="product-actions"><button type="button" class="btn outline details">Ver
+                                detalles</button><button type="button" class="btn primary ask">Consultar</button></div>
+                    </div>
+                </article>
+                <article class="producto reveal" data-marca="Adidas" data-categoria="Urbano" data-genero="Mujer"
+                    data-precio="590" data-tallas="37,38,39,40,41,42,43" data-oferta="si" data-colores="Negro, Blanco"
+                    data-descripcion="Tenis de estilo urbano para uso diario. Modelo demostrativo: confirmar existencias y características."
+                    data-nombre="Adidas Campus ">
+                    <div class="product-image"><img src="imagenes/teni 2.webp"
+                            alt="Ilustración de tenis Adidas Campus Motion" loading="lazy"><span
+                            class="pill oferta">OFERTA</span></div>
+                    <div class="product-content"><span class="brand">Adidas · Urbano</span>
+                        <h3>Adidas Superstar Blanco con negro</h3>
+                        <p class="muted">Tallas referenciales: 37–43</p>
+                        <div class="prices"><strong>Bs 350</strong><s>Bs 700</s></div>
+                        <div class="product-actions"><button type="button" class="btn outline details">Ver
+                                detalles</button><button type="button" class="btn primary ask">Consultar</button></div>
+                    </div>
+                </article>
+                <article class="producto reveal" data-marca="Puma" data-categoria="Deportivo" data-genero="Hombre"
+                    data-precio="540" data-tallas="37,38,39,40,41,42,43" data-oferta="no" data-colores="Negro, Blanco"
+                    data-descripcion="Tenis de estilo deportivo para uso diario. Modelo demostrativo: confirmar existencias y características."
+                    data-nombre="Puma Velocity Run">
+                    <div class="product-image"><img src="imagenes/teni 4.jpg"
+                            alt="Ilustración de tenis Puma Velocity Run" loading="lazy"></div>
+                    <div class="product-content"><span class="brand">Puma · Deportivo</span>
+                        <h3>Puma  suide XL</h3>
+                        <p class="muted">Tallas referenciales: 37–43</p>
+                        <div class="prices"><strong>Bs 280</strong></div>
+                        <div class="product-actions"><button type="button" class="btn outline details">Ver
+                                detalles</button><button type="button" class="btn primary ask">Consultar</button></div>
+                    </div>
+                </article>
+                <article class="producto reveal" data-marca="Vans" data-categoria="Casual" data-genero="Mujer"
+                    data-precio="430" data-tallas="37,38,39,40,41,42,43" data-oferta="no" data-colores="Negro, Blanco"
+                    data-descripcion="Tenis de estilo casual para uso diario. Modelo demostrativo: confirmar existencias y características."
+                    data-nombre="Vans Old School Street">
+                    <div class="product-image"><img src="imagenes/teni 4.webp"
+                            alt="Ilustración de tenis Vans Old School Street" loading="lazy"><span
+                            class="pill nuevo">NUEVO</span></div>
+                    <div class="product-content"><span class="brand">Vans · Casual</span>
+                        <h3>Vans OLD Skool black</h3>
+                        <p class="muted">Tallas referenciales: 37–43</p>
+                        <div class="prices"><strong>Bs 450</strong></div>
+                        <div class="product-actions"><button type="button" class="btn outline details">Ver
+                                detalles</button><button type="button" class="btn primary ask">Consultar</button></div>
+                    </div>
+                </article>
+                <article class="producto reveal" data-marca="Jordan" data-categoria="Urbano" data-genero="Hombre"
+                    data-precio="780" data-tallas="37,38,39,40,41,42,43" data-oferta="si" data-colores="Negro, Blanco"
+                    data-descripcion="Tenis de estilo urbano para uso diario. Modelo demostrativo: confirmar existencias y características."
+                    data-nombre="Jordan Court High">
+                    <div class="product-image"><img src="imagenes/teni 5.jpg"
+                            alt="Ilustración de tenis Jordan Court High" loading="lazy"><span
+                            class="pill oferta">OFERTA</span></div>
+                    <div class="product-content"><span class="brand">Jordan · Urbano</span>
+                        <h3>Jordan 4 netro black cat</h3>
+                        <p class="muted">Tallas referenciales: 37–43</p>
+                        <div class="prices"><strong>Bs 520</strong><s>Bs 680</s></div>
+                        <div class="product-actions"><button type="button" class="btn outline details">Ver
+                                detalles</button><button type="button" class="btn primary ask">Consultar</button></div>
+                    </div>
+                </article>
+                <article class="producto reveal" data-marca="Nike" data-categoria="Deportivo" data-genero="Mujer"
+                    data-precio="680" data-tallas="37,38,39,40,41,42,43" data-oferta="no" data-colores="Negro, Blanco"
+                    data-descripcion="Tenis de estilo deportivo para uso diario. Modelo demostrativo: confirmar existencias y características."
+                    data-nombre="Nike City Runner">
+                    <div class="product-image"><img src="imagenes/teni 6.jpg"
+                            alt="Ilustración de tenis Nike City Runner" loading="lazy"><span
+                            class="pill nuevo">NUEVO</span></div>
+                    <div class="product-content"><span class="brand">Nike · Deportivo</span>
+                        <h3>Nike Air force 1 low </h3>
+                        <p class="muted">Tallas referenciales: 37–43</p>
+                        <div class="prices"><strong>Bs 540</strong></div>
+                        <div class="product-actions"><button type="button" class="btn outline details">Ver
+                                detalles</button><button type="button" class="btn primary ask">Consultar</button></div>
+                    </div>
+                </article>
+                <article class="producto reveal" data-marca="Adidas" data-categoria="Casual" data-genero="Hombre"
+                    data-precio="620" data-tallas="37,38,39,40,41,42,43" data-oferta="no" data-colores="Negro, Blanco"
+                    data-descripcion="Tenis de estilo casual para uso diario. Modelo demostrativo: confirmar existencias y características."
+                    data-nombre="Adidas Retro Pace">
+                    <div class="product-image"><img src="imagenes/teni 7.webp"
+                            alt="Ilustración de tenis Adidas Retro Pace" loading="lazy"></div>
+                    <div class="product-content"><span class="brand">Adidas · Casual</span>
+                        <h3>Adidas Superstar black</h3>
+                        <p class="muted">Tallas referenciales: 37–43</p>
+                        <div class="prices"><strong>Bs 480</strong></div>
+                        <div class="product-actions"><button type="button" class="btn outline details">Ver
+                                detalles</button><button type="button" class="btn primary ask">Consultar</button></div>
+                    </div>
+                </article>
+                <article class="producto reveal" data-marca="Puma" data-categoria="Deportivo" data-genero="Mujer"
+                    data-precio="510" data-tallas="37,38,39,40,41,42,43" data-oferta="si" data-colores="Negro, Blanco"
+                    data-descripcion="Tenis de estilo deportivo para uso diario. Modelo demostrativo: confirmar existencias y características."
+                    data-nombre="Puma Urban Flex">
+                    <div class="product-image"><img src="imagenes/teni 8.jpg" alt="Ilustración de tenis Puma Urban Flex"
+                            loading="lazy"><span class="pill oferta">OFERTA</span></div>
+                    <div class="product-content"><span class="brand">Puma · Deportivo</span>
+                        <h3>Puma caven  2.0 black </h3>
+                        <p class="muted">Tallas referenciales: 37–43</p>
+                        <div class="prices"><strong>Bs 340</strong><s>Bs 430</s></div>
+                        <div class="product-actions"><button type="button" class="btn outline details">Ver
+                                detalles</button><button type="button" class="btn primary ask">Consultar</button></div>
+                    </div>
+                </article>
+                <article class="producto reveal" data-marca="Vans" data-categoria="Casual" data-genero="Unisex"
+                    data-precio="460" data-tallas="37,38,39,40,41,42,43" data-oferta="no" data-colores="Negro, Blanco"
+                    data-descripcion="Tenis de estilo casual para uso diario. Modelo demostrativo: confirmar existencias y características."
+                    data-nombre="Vans Canvas Classic">
+                    <div class="product-image"><img src="imagenes/teni 9.webp"
+                            alt="Ilustración de tenis Vans Canvas Classic" loading="lazy"></div>
+                    <div class="product-content"><span class="brand">Vans · Casual</span>
+                        <h3>Vans Upland</h3>
+                        <p class="muted">Tallas referenciales: 37–43</p>
+                        <div class="prices"><strong>Bs 460</strong></div>
+                        <div class="product-actions"><button type="button" class="btn outline details">Ver
+                                detalles</button><button type="button" class="btn primary ask">Consultar</button></div>
+                    </div>
+                </article>
+                <article class="producto reveal" data-marca="Jordan" data-categoria="Urbano" data-genero="Hombre"
+                    data-precio="820" data-tallas="37,38,39,40,41,42,43" data-oferta="no" data-colores="Negro, Blanco"
+                    data-descripcion="Tenis de estilo urbano para uso diario. Modelo demostrativo: confirmar existencias y características."
+                    data-nombre="Jordan Flight Street">
+                    <div class="product-image"><img src="imagenes/teni 10.jpg"
+                            alt="Ilustración de tenis Jordan Flight Street" loading="lazy"><span
+                            class="pill nuevo">NUEVO</span></div>
+                    <div class="product-content"><span class="brand">Jordan · Urbano</span>
+                        <h3>Jordan 4 retro Lakers imperial purple</h3>
+                        <p class="muted">Tallas referenciales: 37–43</p>
+                        <div class="prices"><strong>Bs 560</strong></div>
+                        <div class="product-actions"><button type="button" class="btn outline details">Ver
+                                detalles</button><button type="button" class="btn primary ask">Consultar</button></div>
+                    </div>
+                </article>
+                <article class="producto reveal" data-marca="Nike" data-categoria="Urbano" data-genero="Unisex"
+                    data-precio="560" data-tallas="37,38,39,40,41,42,43" data-oferta="si" data-colores="Negro, Blanco"
+                    data-descripcion="Tenis de estilo urbano para uso diario. Modelo demostrativo: confirmar existencias y características."
+                    data-nombre="Nike Everyday Air">
+                    <div class="product-image"><img src="imagenes/teni 11.webp"
+                            alt="Ilustración de tenis Nike Everyday Air" loading="lazy"><span
+                            class="pill oferta">OFERTA</span></div>
+                    <div class="product-content"><span class="brand">Nike · Urbano</span>
+                        <h3>Travis Scott X Air jordan 1 low black</h3>
+                        <p class="muted">Tallas referenciales: 37–43</p>
+                        <div class="prices"><strong>Bs 580</strong><s>Bs 620</s></div>
+                        <div class="product-actions"><button type="button" class="btn outline details">Ver
+                                detalles</button><button type="button" class="btn primary ask">Consultar</button></div>
+                    </div>
+                </article>
+                <article class="producto reveal" data-marca="Adidas" data-categoria="Deportivo" data-genero="Mujer"
+                    data-precio="710" data-tallas="37,38,39,40,41,42,43" data-oferta="no" data-colores="Negro, Blanco"
+                    data-descripcion="Tenis de estilo deportivo para uso diario. Modelo demostrativo: confirmar existencias y características."
+                    data-nombre="Adidas Street Pro">
+                    <div class="product-image"><img src="imagenes/teni 12..webp"
+                            alt="Ilustración de tenis Adidas Street Pro" loading="lazy"></div>
+                    <div class="product-content"><span class="brand">Adidas · Deportivo</span>
+                        <h3>Adidas Grand Court Mid</h3>
+                        <p class="muted">Tallas referenciales: 37–43</p>
+                        <div class="prices"><strong>Bs 350</strong></div>
+                        <div class="product-actions"><button type="button" class="btn outline details">Ver
+                                detalles</button><button type="button" class="btn primary ask">Consultar</button></div>
+                    </div>
+                </article>
+            </div>
+            <p id="noResults" class="empty" hidden>No encontramos productos con esos filtros. Probá otra búsqueda.</p>
+            <p class="disclaimer">* Imágenes ilustrativas, marcas/modelos y precios de ejemplo; reemplazalos por tu
+                inventario real antes de publicar.</p>
+        </section>
+        <section id="marcas" class="brand-section">
+            <div class="container">
+                <div class="section-top">
+                    <div><span class="eyebrow">MARCAS</span>
+                        <h2>ENCONTRÁ TU <em>FAVORITA.</em></h2>
+                    </div>
+                    <p>Seleccioná una marca para ver sus modelos en el catálogo.</p>
+                </div>
+                <div class="brand-grid"><button data-brand="Nike">NIKE <span>↗</span></button><button
+                        data-brand="Adidas">adidas <span>↗</span></button><button data-brand="Puma">PUMA
+                        <span>↗</span></button><button data-brand="Vans">VANS <span>↗</span></button><button
+                        data-brand="Jordan">JORDAN <span>↗</span></button></div>
+            </div>
+        </section>
+        <section class="section container" id="destacados">
+            <div class="section-top">
+                <div><span class="eyebrow dark">LOS MÁS VISTOS</span>
+                    <h2>DESTACADOS <em>RYJO.</em></h2>
+                </div>
+                <div class="arrows"><button id="featPrev" aria-label="Anterior destacado">←</button><button
+                        id="featNext" aria-label="Siguiente destacado">→</button></div>
+            </div>
+            <div class="featured">
+                <div class="featured-img"><img id="featuredImg" src="imagenes/teni 1.jpg" alt="Tenis destacado"></div>
+                <div class="featured-copy"><span class="eyebrow dark">SELECCIÓN ESPECIAL</span>
+                    <h3 id="featuredTitle">Nike Air Street</h3>
+                    <p>Un modelo para sumar personalidad a cada paso. Consultá tallas y disponibilidad.</p><strong
+                        id="featuredPrice">Bs 650</strong><button id="featuredAsk" class="btn primary">Consultar modelo
+                        ↗</button>
+                </div>
+            </div>
+        </section>
+        <section id="ofertas" class="offer-section">
+            <div class="container offer-wrap">
+                <div><span class="eyebrow">PROMOCIONES</span>
+                    <h2>OFERTAS QUE NO<br>VAS A QUERER <em>PERDER.</em></h2>
+                    <p>Precios de demostración. Las promociones reales se activan al actualizar el catálogo.</p><a
+                        href="#catalogo" id="offerLink" class="btn light">Explorar ofertas ↗</a>
+                </div>
+                <div class="offer-photo"><img src="imagenes/teni 5.jpg"
+                        alt="Tenis destacado de demostración"><span>HASTA AGOTAR STOCK*</span></div>
+            </div>
+        </section>
+        <section class="section container" id="nosotros">
+            <div class="section-top">
+                <div><span class="eyebrow dark">NUESTRA ESENCIA</span>
+                    <h2>ESTO ES <em>RYJO.</em></h2>
+                </div>
+            </div>
+            <div class="about-grid">
+                <div class="about-feature"><span>01 / NOSOTROS</span>
+                    <h3>Una tienda con actitud.</h3>
+                    <p>En RYJO Sneakers, desde Potosí, queremos ayudarte a encontrar tenis que vayan con tu personalidad
+                        y tu ritmo de vida.</p>
+                </div>
+                <div class="about-feature"><span>02 / MISIÓN</span>
+                    <h3>Comodidad y estilo.</h3>
+                    <p>Acercar opciones de calzado urbano y deportivo con variedad de diseños y atención personalizada.
+                    </p>
+                </div>
+                <div class="about-feature"><span>03 / VISIÓN</span>
+                    <h3>Ser parte de tu día.</h3>
+                    <p>Convertirnos en un punto de referencia local para quienes buscan renovar su estilo con confianza.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="section sizes-section">
+            <div class="container">
+                <div class="section-top">
+                    <div><span class="eyebrow dark">ANTES DE ELEGIR</span>
+                        <h2>GUÍA DE <em>TALLAS.</em></h2>
+                    </div>
+                    <p>Equivalencias aproximadas; pueden variar según fabricante y modelo.</p>
+                </div>
+                <div class="size-controls"><label for="sizeMode">Ver tallas</label><select id="sizeMode">
+                        <option value="adulto">Adulto · referencia general</option>
+                        <option value="juvenil">Juvenil · referencia general</option>
+                    </select></div>
+                <div class="table-scroll">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>EU</th>
+                                <th>US (aprox.)</th>
+                                <th>Longitud del pie</th>
+                            </tr>
+                        </thead>
+                        <tbody id="sizeRows"></tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section container" id="galeria">
+            <div class="section-top">
+                <div><span class="eyebrow dark">INSPIRACIÓN</span>
+                    <h2>GALERÍA <em>RYJO.</em></h2>
+                </div>
+                <p>Hacé clic en una imagen para verla más grande.</p>
+            </div>
+            <div class="gallery"><button class="gallery-item" aria-label="Ampliar imagen 1"><img
+                        src="imagenes/teni 2.webp" alt="Tenis violeta de muestra" loading="lazy"></button><button
+                    class="gallery-item" aria-label="Ampliar imagen 2"><img src="imagenes/teni 4.jpg"
+                        alt="Tenis amarillo de muestra" loading="lazy"></button><button class="gallery-item"
+                    aria-label="Ampliar imagen 3"><img src="imagenes/teni 6.jpg" alt="Tenis verde de muestra"
+                        loading="lazy"></button><button class="gallery-item" aria-label="Ampliar imagen 4"><img
+                        src="imagenes/teni 9.webp" alt="Tenis gris de muestra" loading="lazy"></button></div>
+        </section>
+        <section class="location-section" id="ubicacion">
+            <div class="container location-grid">
+                <div><span class="eyebrow">ENCONTRANOS</span>
+                    <h2>VISITANOS EN <em>POTOSÍ.</em></h2>
+                    <p>Estamos en Potosí, Bolivia. Completá la dirección y los horarios reales de tu tienda para que los
+                        clientes puedan encontrarte.</p>
+                    <div class="location-data">
+                        <div><b>Dirección</b><span>[bulevar avenida sucre entre matos]</span></div>
+                        <div><b>Horarios</b><span>[08:00 Am - 22:00 PM ]</span></div>
+                        <div><b>Contacto</b><span>[73897550 - 67922772]</span></div>
+                    </div><a class="btn light" target="_blank" rel="noopener"
+                        href="https://maps.app.goo.gl/BpNaebGu7GRtavBfA">Ver Potosí en
+                        Google Maps ↗</a>
+                </div>
+                <div class="location-panel"><span></span>
+                    <img
+                    src="imagenes/fondo 1.jpg" width="900"
+                    height="900"
+                    alt="tienda de RYJO"
+                    class="imagen-tienda"
+                    <h3>Potosí, Bolivia</h3>
+                    <p>Espacio reservado para el mapa exacto de la tienda cuando agregues su dirección.</p>
+                </div>
+            </div>
+        </section>
+        <section class="section container" id="contacto">
+            <div class="section-top">
+                <div><span class="eyebrow dark">HABLEMOS</span>
+                    <h2>¿BUSCÁS UN <em>MODELO?</em></h2>
+                </div>
+                <p>Envianos tu consulta y te ayudamos a encontrar el par ideal.</p>
+            </div>
+            <form id="contactForm" class="contact-form"><label>Nombre completo<input name="nombre" required
+                        maxlength="80" placeholder="Tu nombre"></label><label>Correo electrónico<input name="correo"
+                        type="email" required placeholder="tunombre@correo.com"></label><label>Celular<input
+                        name="celular" required pattern="[0-9+() -]{7,20}"
+                        placeholder="Tu número"></label><label>Producto de interés<input name="producto"
+                        placeholder="Marca o modelo"></label><label class="full">Mensaje<textarea name="mensaje"
+                        required rows="5" placeholder="Contanos qué estás buscando…"></textarea></label><button
+                    class="btn primary" type="submit">Preparar mensaje por WhatsApp ↗</button>
+                <p id="contactMessage" class="form-message" role="status"></p>
+            </form>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div><a class="logo" href="#inicio">RYJO<span>.</span><small>SNEAKERS</small></a>
+                <p>Tu próximo par empieza acá.<br>Potosí · Bolivia</p>
+            </div>
+            <div>
+                <h4>Explorá</h4><a href="#catalogo">Catálogo</a><a href="#marcas">Marcas</a><a
+                    href="#ofertas">Ofertas</a>
+            </div>
+            <div>
+                <h4>Información</h4><a href="#nosotros">Nosotros</a><a href="#ubicacion">Ubicación</a><a
+                    href="#contacto">Contacto</a>
+            </div>
+            <div>
+                <h4>Redes sociales</h4>
+                <p class="muted">NUESTROS PERFILES:</p>
+                <div class="socials"><a href="https://www.instagram.com/ryjosneakers?obrf=MXQxc3Y5aTd4dGN2eQ==">Instagram ↗</a><a href="https://www.facebook.com/share/1G98265NW8/">Facebook ↗</a><a
+                        href="https://www.tiktok.com/@ryjosnakers?_r=1&_t=ZS-9B1D7zly1sv">TikTok ↗</a></div>
+            </div>
+        </div>
+        <div class="container bottom"><span>© <span id="year"></span> RYJO Sneakers. Todos los derechos
+                reservados.</span><span>Hecho para Potosí, Bolivia.</span></div>
+    </footer>
+    <button id="whatsappFloat" class="whatsapp-float" aria-label="Consultar por WhatsApp"
+        title="WhatsApp">✆</button><button id="toTop" class="top-float" aria-label="Volver arriba">↑</button>
+    <dialog id="productModal" class="modal"><button id="closeModal" class="close-modal"
+            aria-label="Cerrar ventana">×</button>
+        <div class="modal-grid"><img id="modalImg" alt="Producto elegido">
+            <div><span id="modalBrand" class="eyebrow dark"></span>
+                <h2 id="modalTitle"></h2>
+                <p id="modalDescription"></p>
+                <h3 id="modalPrice"></h3>
+                <p id="modalSizes"></p>
+                <p id="modalColors"></p><button class="btn primary" id="modalAsk">Consultar por WhatsApp ↗</button>
+            </div>
+        </div>
+    </dialog>
+    <dialog id="galleryModal" class="gallery-modal"><button id="closeGallery" class="close-modal"
+            aria-label="Cerrar imagen">×</button><img id="galleryLarge" alt="Imagen ampliada">
+        <div class="arrows"><button id="galleryPrev" aria-label="Imagen anterior">←</button><button id="galleryNext"
+                aria-label="Imagen siguiente">→</button></div>
+    </dialog>
+</body>
+
+</html>

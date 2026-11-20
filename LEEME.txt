@@ -1,0 +1,12 @@
+RYJO Sneakers — catálogo informativo para Potosí, Bolivia
+
+1. Abrí index.html en un navegador o con la extensión Live Server de Visual Studio Code.
+2. Para cambiar una imagen: reemplazá su src="imagenes/tenis-01.svg" en index.html por src="imagenes/mi-foto.jpg" y guardá la nueva foto en la carpeta imagenes.
+3. Para editar nombres, marcas, categorías, precios y tallas: editá el texto de la tarjeta y sus atributos data-* del archivo index.html. Ambos deben coincidir.
+4. Para activar WhatsApp: en js/script.js, CONFIG.whatsapp = '59167922772' con tus 8 dígitos reales después del código 591.
+5. Agregá dirección, horario, teléfonos y enlaces a redes sociales reales en index.html.
+6. Los 12 productos, sus precios y los modelos son EJEMPLOS, no inventario real. Las imágenes SVG son ilustraciones locales reemplazables, no fotografías ni logos oficiales.
+7. Los filtros y el formulario no requieren servidor ni base de datos. El formulario prepara un mensaje en WhatsApp, no guarda datos.
+8. Las tallas son aproximadas, verifica guías oficiales de cada marca antes de publicarlas.
+9. En js/script.js el carrusel heroImages utiliza imágenes locales; si las cambiás, actualizá también esa lista para conservar la rotación.
+10. Para publicar, subí la carpeta con su estructura al alojamiento web.
